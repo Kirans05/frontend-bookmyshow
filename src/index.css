@@ -1,13 +1,283 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    margin: 0;
+}
+#root{
+    margin: 0;
+    /* background-color: aqua; */
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid red;
+}
+.movieIMG{
+    max-width: 300px;
+    max-height: 200px;
+}
+.moviesListOrder{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 3px solid black; */
+    width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+ .moviesDetails{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 1px 2px grey;
+    /* border: 3px solid red; */
+    margin: 20px 20px 20px 20px;
+    transition: transform 0.3sec ease in out;
+    max-height: 400px;
+}
+.h1{
+    text-align: center;
+}
+.insideindividualbody > h6{
+    font-size: 10px;
+}
+.moviesListOrder  :hover{
+    transform: scale(1.1);
+    /* border: 2px solid red; */
+}
+.insideindividualbody >h6{
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.moviesListOrder > .indibody{
+    display: flex;
+    flex-direction: row;
+    border: 3px solid red;
+}
+.moviesDetails > .insideindividualbody{
+    margin: 20px 20px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color:white;
+    box-shadow: 2px 2px 1px 2px grey;
+    height: 90px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 10px;
+}
+
+.navbarimage > img {
+    max-width: 150px;
+    margin-left: 80px;
+}
+.navbar > .navbarright .btn{
+    margin-right: 30px;
+    background-color: red;
+}
+.signuppage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+    height: 80vh;
+}
+.formsignup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 350px;
+}
+.loginpage{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    font-size: 30px;
+    justify-content: space-evenly;
+}
+.formlogin{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    align-items: center;
+    justify-content: space-between;
+}
+.emailpage{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+.formemail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    align-items: center;
+
+}
+
+.navbardash{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    box-shadow: 3px 3px 1px 2px grey;
+    height: 90px;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.navbarimage > img {
+    max-width: 150px;
+    margin-left: 80px;
+}
+.navbardash > .navbarrightdash .btn{
+    margin-right: 30px;
+    background-color: red;
+}
+.navbardash > .navbardashMiddle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 15px;
+}
+.navbardashMiddle > input {
+    margin-right: 10px;
+    width: 300px;
+    height: 30px;
+    border: none;
+    outline: none;
+    /* border-radius: 30px; */
+}
+
+.navbardashMiddle > SearchIcon {
+    margin-right: 10px;
+}
+
+.movieSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: yellow;
+}
+.movieSection > img{
+    min-width: 650px;
+    max-width: 900px;
+    max-height: 400px;
+    margin-right: 30px;
+}
+.movieDescription{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    min-height: 300px;
+}
+.h6 {
+    margin: 0;
+}
+/* .moviesDetails > img:hover{
+    transform: scale((1));
+} */
+
+.notbooked > Button{
+    background-color: greenyellow;
+    color: black;
+    width: 5px;
+    height: 30px;
+    border-radius: 50%;
+}
+.booked > button{
+    background-color: grey;
+    color: white;
+    width: 5px;
+    height: 30px;
+    border-radius: 50%;
+}
+.btn-groups{
+    width: 45%;
+    height: 50vh;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.bookpageseating{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.app{
+    /* background-color: aquamarine; */
+    margin: 0;
+    width: 100%;
+    overflow-x: visible;
+}
+.homwpageImages > img{
+    /* min-width: 300px; */
+    max-width: 500px;
+    min-height: 700px;
+}
+.homwpageImages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-x: auto;
+    flex-wrap: wrap;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: wheat;
+}
+.dashboardnavback{
+    background-color: black;
+    color: white;
+}
+.footer{
+    color: black;
+}
+.movieSection{
+    background-color: black;
+    color: white;
+}
+.mainMoviesection{
+    background-color: black;
+    color: white;
+}
+.paymentpageedit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
